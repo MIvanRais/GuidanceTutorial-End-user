@@ -1,0 +1,23 @@
+/** || Body */
+body{
+    margin: 0 20px;
+    background-color: var(--clr-primary);
+}
+/** || Header */
+header{
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+header > * {
+    cursor: pointer;
+    color: var(--clr-font);
+}
+header > span{
+    grid-column: 4 / 5;
+    font-size: var(--fs-small-10);
+    justify-self: end;
+    align-self: center;
+    font-weight: var(--fw-bold);
+}
