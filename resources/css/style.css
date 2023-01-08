@@ -3,6 +3,7 @@ body{
     margin: 0 20px;
     background-color: var(--clr-primary);
 }
+
 /** || Header */
 header{
     margin-top: 22px;
@@ -20,4 +21,48 @@ header > span{
     justify-self: end;
     align-self: center;
     font-weight: var(--fw-bold);
+}
+
+/** || hero-text-box Section */
+.hero-text-box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+}
+.hero-text-box > *{
+    grid-column: 1 / 5;
+}
+.hero-text-box > img{
+    height: 249px;
+    place-self: center;
+}
+.hero-text-box > h1{
+    font-size: var(--fs-small-40);
+    font-family: var(--ff-headline);
+    color: var(--clr-font);
+    margin-bottom: 10px;
+    line-height: 135%;
+}
+.hero-text-box > p{
+    font-size: var(--fs-small-14);
+    font-family: var(--ff-general);
+    font-weight: var(--fw-regular);
+    margin-bottom: 35px;
+    color: var(--clr-font);
+    line-height: 135%;
+}
+.hero-text-box > svg{
+    border: 2px solid hsla(29, 27%, 73%, 1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 20px;
+    padding: 12px 15px;
+    cursor: pointer;
+    place-self: center;
+    color: var(--clr-font);
 }
