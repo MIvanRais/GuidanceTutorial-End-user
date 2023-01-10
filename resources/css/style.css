@@ -140,7 +140,8 @@ header>button:last-child {
 }
 
 .hero-text-box>img {
-    height: 249px;
+    /** Formula: 249÷300.833(width's parent)*100 */
+    width: 82.7702%;
     place-self: center;
 }
 
@@ -243,8 +244,12 @@ header>button:last-child {
 }
 
 .categories .card {
-    width: 149px;
     display: flex;
+}
+
+.categories img {
+    /** Formula: 149÷292.5(width's parent)×100 */
+    width: 50.9402%;
 }
 
 .categories .content {
