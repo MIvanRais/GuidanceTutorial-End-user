@@ -174,6 +174,16 @@ header>button:last-child {
 }
 
 /** || recommended Section */
+.recommended>.swiper {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 90%;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -205,6 +215,12 @@ header>button:last-child {
     margin-bottom: 5px;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 25px;
+    color: var(--clr-border);
+}
+
 
 /** || Categories Section */
 .categories>h2 {
@@ -221,11 +237,7 @@ header>button:last-child {
     margin-bottom: 25px;
 }
 
-.cateogry-slider>form {
-    display: flex;
-}
-
-.cateogry-slider button {
+.btn {
     font-size: var(--fs-small-10);
     background-color: var(--clr-secondary);
     border: 1px solid var(--clr-border);
@@ -235,7 +247,7 @@ header>button:last-child {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    padding: 4px 13px;
+    padding: 4px 0;
     margin-right: 8px;
 }
 
@@ -305,4 +317,14 @@ footer>p:last-child {
     margin-bottom: 55px;
     font-size: var(--fs-small-10);
     font-weight: var(--fw-regular);
+}
+
+/** || Media Queries */
+@media (min-width: 0) {
+
+    /** || recommended Section */
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }
