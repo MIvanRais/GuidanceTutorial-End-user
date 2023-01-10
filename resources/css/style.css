@@ -92,7 +92,18 @@ header>* {
     cursor: pointer;
 }
 
-header>span {
+header>button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: max-content;
+}
+
+header>button:first-child {
+    height: 20px;
+}
+
+header>button:last-child {
     grid-column: 4 / 5;
     font-size: var(--fs-small-10);
     justify-self: end;
