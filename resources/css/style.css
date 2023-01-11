@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: var(--ff-general);
     color: var(--clr-font);
+    box-sizing: border-box;
 }
 
 /** || html */
@@ -95,6 +96,11 @@ hr {
     font-size: var(--fs-small-10);
 }
 
+/** || buttons' style */
+button {
+    outline: none;
+}
+
 /** || Header */
 header {
     margin-top: 22px;
@@ -124,6 +130,122 @@ header>button:last-child {
     justify-self: end;
     align-self: center;
     font-weight: var(--fw-bold);
+}
+
+/** || modal-login */
+.login {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    position: relative;
+}
+
+.modal-login {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--clr-primary);
+    width: 100%;
+}
+
+dialog::backdrop {
+    background: hsla(0, 0%, 0%, 0.5);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.header>h2 {
+    grid-column: 2/3;
+    place-self: center;
+}
+
+.header>svg {
+    grid-column: 3/4;
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+}
+
+.login-form>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.username-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: var(--fs-small-14);
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1.7px solid var(--clr-border);
+}
+
+button[type="submit"] {
+    margin-bottom: 20px;
+    width: 60px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    border: 1.7px solid var(--clr-border);
+    background-color: var(--clr-primary);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--clr-button);
+    border: 1.7px solid var(--clr-button-border);
+}
+
+.login-form>p {
+    font-size: var(--fs-small-12);
+    font-weight: var(--fw-regular);
+}
+
+.login-form>p>span {
+    color: var(--clr-new);
+    cursor: pointer;
+}
+
+.login-form>p>span:hover {
+    color: var(--clr-font);
 }
 
 /** || hero-text-box Section */
@@ -171,6 +293,7 @@ header>button:last-child {
     height: 20px;
     padding: 12px 15px;
     cursor: pointer;
+    box-sizing: content-box;
 }
 
 /** || recommended Section */
