@@ -101,39 +101,9 @@ button {
     outline: none;
 }
 
-/** || Header */
-header {
-    margin-top: 22px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-}
-
-header>* {
-    cursor: pointer;
-}
-
-header>button {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    width: max-content;
-}
-
-header>button:first-child {
-    height: 20px;
-}
-
-header>button:last-child {
-    grid-column: 4 / 5;
-    font-size: var(--fs-small-10);
-    justify-self: end;
-    align-self: center;
-    font-weight: var(--fw-bold);
-}
-
-/** || modal-login */
-.login {
+/** || modal-login & modal-register */
+.login,
+.register {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -141,7 +111,8 @@ header>button:last-child {
     position: relative;
 }
 
-.modal-login {
+.modal-login,
+.modal-register {
     padding: 20px;
     border: none;
     border-radius: 10px;
@@ -157,7 +128,7 @@ dialog::backdrop {
     background: hsla(0, 0%, 0%, 0.5);
 }
 
-.login-form {
+.container-form {
     display: flex;
     flex-direction: column;
 }
@@ -181,18 +152,12 @@ dialog::backdrop {
     cursor: pointer;
 }
 
-.login-form>form {
+.container-form>form {
     display: flex;
     flex-direction: column;
 }
 
-.username-field {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.password-field {
+.group-field {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -234,18 +199,49 @@ button[type="submit"]:hover {
     border: 1.7px solid var(--clr-button-border);
 }
 
-.login-form>p {
+.container-form>p {
     font-size: var(--fs-small-12);
     font-weight: var(--fw-regular);
 }
 
-.login-form>p>span {
+.container-form>p>span {
     color: var(--clr-new);
     cursor: pointer;
 }
 
-.login-form>p>span:hover {
+.container-form>p>span:hover {
     color: var(--clr-font);
+}
+
+/** || Header */
+header {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+header>* {
+    cursor: pointer;
+}
+
+header>button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: max-content;
+}
+
+header>button:first-child {
+    height: 20px;
+}
+
+header>button:last-child {
+    grid-column: 4 / 5;
+    font-size: var(--fs-small-10);
+    justify-self: end;
+    align-self: center;
+    font-weight: var(--fw-bold);
 }
 
 /** || hero-text-box Section */
