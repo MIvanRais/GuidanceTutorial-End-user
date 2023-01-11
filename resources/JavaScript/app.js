@@ -1,4 +1,5 @@
 //////** modal-login - modal-register
+//**reusable selectors */
 const btnLoginForm = document.querySelector('#open-modal-login');
 const modalLogin = document.querySelector('#modal-login');
 const modalRegister = document.querySelector('#modal-register');
@@ -26,4 +27,16 @@ closeModals[1].addEventListener('click', () => {
 openModals[1].addEventListener('click', () => {
     modalRegister.close();
     modalLogin.showModal();
+})
+
+//////** modal-request
+//**selector */
+const modalRequest = document.querySelector('#modal-request');
+
+openModals[2].addEventListener('click', () => {
+    modalRequest.showModal();
+})
+
+closeModals[2].addEventListener('click', () => {
+    modalRequest.close();
 })

@@ -102,8 +102,7 @@ button {
 }
 
 /** || modal-login & modal-register */
-.login,
-.register {
+.container-modals {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -112,7 +111,8 @@ button {
 }
 
 .modal-login,
-.modal-register {
+.modal-register,
+.modal-request {
     padding: 20px;
     border: none;
     border-radius: 10px;
@@ -168,7 +168,8 @@ label {
     margin-bottom: 5px;
 }
 
-input {
+input,
+textarea {
     padding: 5px 5px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -197,6 +198,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--clr-button);
     border: 1.7px solid var(--clr-button-border);
+    color: var(--clr-btn-font);
 }
 
 .container-form>p {
@@ -211,6 +213,11 @@ button[type="submit"]:hover {
 
 .container-form>p>span:hover {
     color: var(--clr-font);
+}
+
+/** || textarea style */
+textarea {
+    resize: vertical;
 }
 
 /** || Header */
@@ -391,6 +398,16 @@ header>button:last-child {
 
 .categories .content * {
     width: max-content;
+}
+
+/** || modal-register */
+.modal-request h2 {
+    grid-column: 1/3;
+}
+
+.modal-request button {
+    width: 70px;
+    margin: 0;
 }
 
 /** || footer */
