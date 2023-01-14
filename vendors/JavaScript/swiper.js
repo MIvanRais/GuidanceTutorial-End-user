@@ -27,7 +27,7 @@ const swiper_recommended = new Swiper('.swiper_recommended', {
 const swiper_categories = new Swiper('.swiper_categories', {
     slidesPerView: 2.9,
     slidesPerGroup: 2,
-    loop: true,
+    loop: false,
     centerSlide: 'true',
     loopFillGroupWithBlank: false,
     grabCursor: 'true',

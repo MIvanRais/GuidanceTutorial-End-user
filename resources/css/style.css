@@ -4,7 +4,7 @@
 /** || Universal */
 * {
     text-decoration: none;
-    font-family: var(--ff-general);
+    font-family: var(--ff-general) !important;
     color: var(--clr-font);
     box-sizing: border-box;
 }
@@ -444,7 +444,9 @@ nav>hr:last-child {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    padding: 4px 0;
+    padding: 4px 15px;
+    width: max-content !important;
+    box-sizing: content-box;
     margin-right: 8px;
 }
 
