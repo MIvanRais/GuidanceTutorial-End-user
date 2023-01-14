@@ -54,22 +54,3 @@ header {
     margin-top: 6.454%;
     margin-bottom: 5.867%;
 }
-
-/** || header */
-.video {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    column-gap: 20px;
-    margin: 0 5.660%;
-    margin-bottom: 8.801%;
-}
-
-.video>* {
-    grid-column: 1/5;
-}
-
-.video>h2 {
-    margin-top: 6.632%;
-    margin-bottom: 1.658%;
-}
