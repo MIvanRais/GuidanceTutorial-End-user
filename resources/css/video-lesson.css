@@ -1,0 +1,75 @@
+/* ----------------------------------------------- */
+/** || Reusable Styles */
+/* ----------------------------------------------- */
+/** || Universal */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--ff-general);
+    color: var(--clr-font);
+}
+
+/** || Body */
+body {
+    background-color: var(--clr-primary);
+}
+
+/** || headings */
+h1,
+h2,
+h3 {
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--fs-small-20);
+}
+
+h2 {
+    font-size: var(--fs-small-18);
+}
+
+h3 {
+    font-size: var(--fs-small-16);
+}
+
+/** || paragraph */
+.short-copy {
+    font-weight: var(--fw-bold);
+    font-size: var(--fw-small-10);
+}
+
+/** || span */
+.shrink {
+    color: var(clr-new);
+}
+
+/** || header */
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    margin: 0 5.660%;
+    margin-top: 6.454%;
+    margin-bottom: 5.867%;
+}
+
+/** || header */
+.video {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    margin: 0 5.660%;
+    margin-bottom: 8.801%;
+}
+
+.video>* {
+    grid-column: 1/5;
+}
+
+.video>h2 {
+    margin-top: 6.632%;
+    margin-bottom: 1.658%;
+}
