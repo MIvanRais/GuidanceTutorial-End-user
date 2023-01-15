@@ -12,6 +12,14 @@
 /** || body */
 body {
     background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section,
+footer {
+    margin: 0 5.660%;
 }
 
 /** || headings' style */
@@ -22,8 +30,14 @@ h1 {
 }
 
 h2 {
+    font-size: var(--fs-small-20);
+    font-weight: var(--fw-bold);
+}
+
+h3 {
     font-size: var(--fs-small-14);
     font-weight: var(--fw-bold);
+    margin-bottom: 5px;
 }
 
 /** || short-copys' style */
@@ -86,3 +100,58 @@ header {
     margin-top: 6.454%;
     margin-bottom: 4.166%;
 }
+
+/** || Categories Section */
+.categories {
+    /** to make the element fill the remaining viewport height */
+    height: 100vh;
+    margin-bottom: 15.363%;
+}
+
+.cateogry-slider {
+    margin-bottom: 8.278%;
+}
+
+.btn {
+    font-size: var(--fs-small-10);
+    background-color: var(--clr-secondary);
+    border: 1px solid var(--clr-border);
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 4px 15px;
+    width: max-content !important;
+    box-sizing: content-box;
+    margin-right: 8px;
+}
+
+.cateogry-slider button:last-child {
+    margin-right: 0;
+}
+
+.categories .card {
+    display: flex;
+}
+
+.categories img {
+    /** Formula: 149÷292.5(width's parent)×100 */
+    width: 50.9402%;
+}
+
+.categories .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.categories .content * {
+    width: max-content;
+}
+
+.content>h2 {
+    margin-bottom: 5px;
+}
+
