@@ -1,57 +1,54 @@
-//////** modal-login - modal-register
+////// **Home page
+////** modal-login - modal-register
 //**selectors */
 const btnLoginForm = document.querySelector('#open-modal-login');
 const modalLogin = document.querySelector('#modal-login');
+const closeModalLogin = document.querySelector('#close-modal-login');
+
+const openModalRegister = document.querySelector('#open-modal-register');
 const modalRegister = document.querySelector('#modal-register');
-const closeModals = document.querySelectorAll('.close-modal');
-const openModals = document.querySelectorAll('.open-modal');
+const closeModalRegister = document.querySelector('#close-modal-register');
+
+const backToModalLogin = document.querySelector('#back-to-modal-login');
 
 //**show the modalLogin */
 btnLoginForm.addEventListener('click', () => {
     modalLogin.showModal();
 })
 //**close the modalLogin */
-closeModals[1].addEventListener('click', () => {
+closeModalLogin.addEventListener('click', () => {
     modalLogin.close();
 })
 //**close the modalLogin and then show the modalRegister */
-openModals[0].addEventListener('click', () => {
+openModalRegister.addEventListener('click', () => {
     modalLogin.close();
     modalRegister.showModal();
 })
 //**close the modalRegister */
-closeModals[2].addEventListener('click', () => {
+closeModalRegister.addEventListener('click', () => {
     modalRegister.close();
 })
 //**close the modalRegister and then show the modalLogin */
-openModals[1].addEventListener('click', () => {
+backToModalLogin.addEventListener('click', () => {
     modalRegister.close();
     modalLogin.showModal();
 })
 
-//////** modal-request
-//**selector */
-const modalRequest = document.querySelector('#modal-request');
-
-openModals[2].addEventListener('click', () => {
-    modalRequest.showModal();
-})
-
-closeModals[3].addEventListener('click', () => {
-    modalRequest.close();
-})
-
-//////** menu-modal
+////** menu-modal
 //**selector */
 const showBurgerMenu = document.querySelector('#menu');
 const modalBurgerMenu = document.querySelector('#modal-burger-menu');
+const closeModalBurgerMenu = document.querySelector('#close-modal-burger-menu');
 
+//**open the burger menu modal */
 showBurgerMenu.addEventListener('click', () => {
     modalBurgerMenu.showModal();
     document.body.classList.add('scroll-hidden');
 })
 
-closeModals[0].addEventListener('click', () => {
+//**close the burger menu modal */
+closeModalBurgerMenu.addEventListener('click', () => {
     modalBurgerMenu.close();
     document.body.classList.remove('scroll-hidden');
 })
+
