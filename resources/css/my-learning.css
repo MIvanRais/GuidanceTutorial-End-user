@@ -1,0 +1,72 @@
+/* ----------------------------------------------- */
+/** || Reusable Styles */
+/* ----------------------------------------------- */
+/** || Universal */
+* {
+    box-sizing: border-box;
+    color: var(--clr-font);
+    font-family: var(--ff-general) !important;
+    text-decoration: none;
+}
+
+/** || headings' style */
+h1 {
+    font-size: var(--fs-small-20);
+    font-weight: var(--fw-bold);
+}
+
+h2 {
+    font-size: var(--fs-small-14);
+    font-weight: var(--fw-bold);
+}
+
+/** || short-copys' style */
+.short-copy {
+    font-size: var(--fs-small-10);
+    font-weight: var(--fw-bold);
+}
+
+/** || hrs' style */
+hr {
+    grid-column: 1 / 5;
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid var(--clr-border);
+}
+
+/** || links' style */
+/** unvisited link */
+.card:link .short-copy {
+    color: var(--clr-font);
+}
+
+/** visited link */
+.card .short-copy:visited {
+    color: var(--clr-font);
+}
+
+/** mouse over link */
+.card:hover .short-copy {
+    color: var(--clr-free);
+}
+
+/** selected link */
+.card:active .short-copy {
+    color: var(--clr-free);
+}
+
+/** || views' style */
+.view {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.view>svg {
+    margin-right: 5px;
+}
+
+.view>p {
+    font-size: var(--fs-small-10);
+}
+
