@@ -44,3 +44,47 @@ header {
     margin-top: 5.820%;
     margin-bottom: 5.555%;
 }
+
+/** || list-notification Section */
+.list-notifiactions>a:link>div * {
+    color: var(--clr-font);
+}
+
+.list-notifiactions>a:visited>div * {
+    color: var(--clr-font);
+}
+
+.list-notifiactions>a:hover>div * {
+    color: var(--clr-font);
+}
+
+.list-notifiactions>a:active>div * {
+    color: var(--clr-font);
+}
+
+.card {
+    display: flex;
+}
+
+.card>img {
+    width: 50.9402%;
+}
+
+.content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content>p:first-child {
+    font-size: var(--fs-small-14);
+    font-weight: var(--fw-regular);
+}
+
+.content>p:last-child {
+    font-size: var(--fs-small-10);
+    font-weight: var(--fw-regular);
+    color: var(--clr-new) !important;
+    align-self: flex-end;
+}
