@@ -12,6 +12,9 @@
 /** || body */
 body {
     background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /** || header, section, footer */
@@ -48,6 +51,8 @@ header {
 /** || list-notification Section */
 .list-notifiactions {
     margin-bottom: 15.363%;
+    /** to make the element fill the remaining viewport height */
+    height: 100vh;
 }
 
 .list-notifiactions>a:link>div * {
