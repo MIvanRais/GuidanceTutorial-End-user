@@ -1,0 +1,32 @@
+/* ----------------------------------------------- */
+/** || Reusable Styles */
+/* ----------------------------------------------- */
+/** || Universal */
+* {
+    box-sizing: border-box;
+    color: var(--clr-font);
+    font-family: var(--ff-general) !important;
+    text-decoration: none;
+}
+
+/** || Body */
+body {
+    background-color: var(--clr-primary);
+}
+
+/** || header, section, footer */
+header,
+section {
+    margin: 0 5.660%;
+}
+
+/** || headings' style */
+h1 {
+    font-size: var(--fs-small-20);
+    font-weight: var(--fw-bold);
+}
+
+h2{
+    font-size: var(--fs-small-16);
+    font-weight: var(--fw-bold);
+}
