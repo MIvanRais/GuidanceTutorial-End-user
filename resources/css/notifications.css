@@ -39,3 +39,8 @@ hr {
     border-bottom: 0.5px solid var(--clr-border);
 }
 
+/** || header */
+header {
+    margin-top: 5.820%;
+    margin-bottom: 5.555%;
+}
