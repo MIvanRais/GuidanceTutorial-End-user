@@ -12,6 +12,9 @@
 /** || Body */
 body {
     background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /** || header, section, footer */
@@ -74,6 +77,8 @@ header {
 /** || list-request */
 .list-request {
     margin-bottom: 15.363%;
+    /** to make the element fill the remaining viewport height */
+    height: 100vh;
 }
 
 .row {
