@@ -46,6 +46,10 @@ header {
 }
 
 /** || list-notification Section */
+.list-notifiactions {
+    margin-bottom: 15.363%;
+}
+
 .list-notifiactions>a:link>div * {
     color: var(--clr-font);
 }
@@ -87,4 +91,51 @@ header {
     font-weight: var(--fw-regular);
     color: var(--clr-new) !important;
     align-self: flex-end;
+}
+
+/** || footer */
+footer {
+    margin-bottom: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+footer>p,
+footer>button {
+    grid-column: 1 / 5;
+    margin-bottom: 15px;
+}
+
+footer>p {
+    font-size: var(--fs-small-14);
+    font-weight: var(--fw-regular);
+    line-height: 128%;
+}
+
+footer>button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: var(--fs-small-12);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer>button:hover {
+    text-decoration: none;
+}
+
+footer>hr {
+    margin: 10px 0;
+    grid-column: 1/5;
+}
+
+footer>p:last-child {
+    font-size: var(--fs-small-10);
+    font-weight: var(--fw-regular);
+    margin-bottom: 0;
 }
