@@ -31,3 +31,8 @@ h2 {
     font-weight: var(--fw-bold);
 }
 
+/** || header */
+header {
+    margin-top: 5.820%;
+    margin-bottom: 5.555%;
+}
