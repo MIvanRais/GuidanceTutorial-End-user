@@ -44,6 +44,11 @@ header {
     margin-bottom: 6.352%;
 }
 
+.stand-out>img {
+    height: 49px;
+    clip-path: circle();
+}
+
 .stand-out>h2 {
     margin-left: 15px;
 }
@@ -104,7 +109,12 @@ input {
     margin-bottom: 22px;
 }
 
-.last-field-group>label {
+.info-image {
+    display: flex;
+    align-items: center;
+}
+
+.info-image>label {
     cursor: pointer;
     margin-bottom: 0;
     border: 1px solid var(--clr-border);
@@ -115,10 +125,17 @@ input {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    margin-right: 10px;
+}
+
+.info-image>p {
+    font-size: var(--fs-small-11);
+    color: var(--clr-new);
 }
 
 .last-field-group>input {
     display: none;
+    /* opacity: 0; */
 }
 
 .btn-group {

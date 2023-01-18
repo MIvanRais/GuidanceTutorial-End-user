@@ -57,11 +57,14 @@
             </div>
             <div>
                 <label for="phone_number">Phone Number</label>
-                <input type="tel" name="phone_number" id="phone_number" value="" required>
+                <input type="tel" name="phone_number" id="phone_number" value="">
             </div>
             <div class="last-field-group">
-                <label for="photo_profile">Choose Image</label>
-                <input type="file" name="photo_profile" id="photo_profile" accept=".jpg, .jpeg, .png" required>
+                <div class="info-image">
+                    <label for="photo_profile">Choose Image</label>
+                    <p>No file currently selected for upload</p>
+                </div>
+                <input type="file" name="photo_profile" id="photo_profile" accept=".jpg, .jpeg, .png">
             </div>
             <div class="btn-group">
                 <a href="#"><button type="button">Cancel</button></a>
@@ -69,6 +72,7 @@
             </div>
         </form>
     </section>
+    <script defer src="resources/JavaScript/interactive-update-profile.js"></script>
 </body>
 
 </html>
