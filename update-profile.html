@@ -23,6 +23,52 @@
     <header>
         <h1>Update Profile</h1>
     </header>
+    <section class="update-profile">
+        <div class="stand-out">
+            <img src="resources/images/Default-Profile.png" alt="Photo Profile">
+            <h2>Fullname</h2>
+        </div>
+        <form action="#" method="post">
+            <div>
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" value="" required>
+            </div>
+            <div>
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname" value="" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" value="" required>
+            </div>
+            <div class="gender-field">
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div>
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" name="phone_number" id="phone_number" value="" required>
+            </div>
+            <div class="last-field-group">
+                <label for="photo_profile">Choose Image</label>
+                <input type="file" name="photo_profile" id="photo_profile" accept=".jpg, .jpeg, .png" required>
+            </div>
+            <div class="btn-group">
+                <a href="#"><button type="button">Cancel</button></a>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
