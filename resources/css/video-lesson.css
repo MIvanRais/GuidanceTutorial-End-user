@@ -144,6 +144,7 @@ header {
     outline: none;
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 button[type="submit"]>svg {
@@ -177,6 +178,7 @@ button[type="submit"]>svg {
 }
 
 .btn-group {
+    display: none;
     margin-top: 10px;
     justify-self: end;
 }
@@ -185,7 +187,7 @@ button[type="submit"]>svg {
     margin-right: 10px;
 }
 
-button[type="reset"] {
+button[type="button"] {
     font-size: var(--fs-small-13);
     border-radius: 5px;
     -webkit-border-radius: 5px;
