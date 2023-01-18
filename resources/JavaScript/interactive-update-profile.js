@@ -18,6 +18,27 @@ function updateImageDisplay() {
 
 inputFile.addEventListener('change', updateImageDisplay);
 
+// **Change The h2's content that depends on firstname field and lastname field
+const fullname = document.querySelector('h2');
+const firstnameField = document.querySelector('input[name="firstname"]');
+const lastnameField = document.querySelector('input[name="lastname"]');
 
+firstnameField.addEventListener('input', () => {
+    fullname.innerText = firstnameField.value.concat(' ', lastnameField.value);
+
+    // **set the content inside h1 back to default
+    if (firstnameField.value === '' && lastnameField.value === '') {
+        fullname.innerText = 'Fullname';
+    }
+})
+
+lastnameField.addEventListener('input', () => {
+    fullname.innerText = firstnameField.value.concat(' ', lastnameField.value);
+
+    // **set the content inside h1 back to default
+    if (firstnameField.value === '' && lastnameField.value === '') {
+        fullname.innerText = 'Fullname';
+    }
+})
 
 
